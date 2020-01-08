@@ -1,0 +1,31 @@
+JUnit – narzędzie służące do tworzenia powtarzalnych testów jednostkowych oprogramowania pisanego w języku Java.
+
+Cechy JUnit:
+
+    metoda najmniejszą jednostką testowania,
+    przypadki testowe,
+    oddzielenie testów od kodu,
+    wiele mechanizmów uruchamiania,
+    tworzenie raportów,
+    integracja z różnymi środowiskami programistycznymi.
+
+W JUnit 3 testy są wykrywane za pomocą mechanizmu refleksji:
+
+ public class HelloWorld extends TestCase
+ {
+   public void testMultiplication()
+   {
+     // Testing if 2*2=4:
+     assertEquals ("Multiplication", 4, 2*2);
+   }
+ }
+
+W JUnicie 4 używane są do tego adnotacje (wprowadzone w Javie 1.5):
+
+ public class HelloWorld
+ {
+   @Test public void testMultiplication()
+   {
+     // Testing if 2*2=4:
+     assertEquals ("Multiplication", 4, 2*2);
+   }
