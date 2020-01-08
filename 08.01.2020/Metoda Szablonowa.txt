@@ -1,0 +1,5 @@
+Wzorzec składa się z co najmniej dwóch klas. Klasa podstawowa AbstractClass definiuje szkielet algorytmu i jest bazą, z której korzysta klient. 
+Składa się z metody szablonowej templateMethod, która jest publiczna i której klient nie ma możliwości rozszerzyć, oraz z metod prywatnych 
+(lub chronionych) method1 oraz method2, które są wykorzystywane w metodzie templateMethod i zawierają domyślną implementację algorytmu. 
+Klient chcący zmienić któryś z kroków algorytmu, musi zdefiniować klasę pochodną ConcreteClass, w której przedefiniuje jedną bądź wszystkie 
+prywatne metody, implementujące kolejne kroki algorytmu.
