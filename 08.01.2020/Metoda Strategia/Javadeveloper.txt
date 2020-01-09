@@ -1,0 +1,108 @@
+ private String format;
+ // . . .
+ 
+ public String format(String text) {
+     if (format.equals("upperCase")) {
+         return text.toUpperCase();
+     } else if (format.equals("lowerCase")) {
+         return text.toLowerCase();
+     } else if (format.equals("capitalize")) {
+         return text.substring(0, 1).toUpperCase() + text.substring(1);
+     } else {
+        . . .
+     }
+ }
+
+Krok 1 - określamy wspólne zachowanie
+
+W pierwszym kroku szukamy wspólnego zachowania. 
+
+Krok 2 - tworzymy interfejs strategii
+
+Tworzymy interfejs strategii o nazwie TextFormatterStrategy. Interfejs ten posiada metodę format(String text).
+
+ package pl.javadeveloper.design.patterns.strategy;
+ 
+ public interface TextFormatterStrategy {
+     public String format(String text);
+ }
+
+Krok 3 - tworzymy wersje algorytmu w osobnych klasach
+
+W kolejnym kroku przenosimy fragmenty instrukcji warunkowych do nowych klas. Każda z klas realizuje jedną z wersji algorytmu. Każda z nich implementuje interfejs TextFormatterStrategy. Poniżej znajdziemy kod każdej z klas.
+
+LowerCaseFormatter
+
+ package pl.javadeveloper.design.patterns.strategy;
+ 
+ public class LowerCaseFormatter implements TextFormatterStrategy {
+     public String format(String text) {
+         return text.toLowerCase();
+     }
+ }
+
+UpperCaseFormatter
+
+ package pl.javadeveloper.design.patterns.strategy;
+ 
+ public class UpperCaseFormatter implements TextFormatterStrategy {
+     public String format(String text) {
+         return text.toUpperCase();
+     }
+ }
+
+CapitalizeFormatter
+
+ package pl.javadeveloper.design.patterns.strategy;
+ 
+ public class CapitalizeFormatter implements TextFormatterStrategy {
+     public String format(String text) {
+        return text.substring(0, 1).toUpperCase() + text.substring(1);
+     }
+ }
+
+Krok 4 - umożliwiamy wybór obiektu klasy strategii w klasie kontekstu
+
+Teraz zmieniamy główną klasę, która będzie używać strategii. Dodajemy pole, które będzie przechowywało odwołanie do interfejsu TextFormatterStrategy. Tworzymy też metodę, która umożliwia przypisanie do tego pola wybranej implementacji. W metodzie print(String text) wywołujemy metodę format() strategii. Metoda ta wypisuje sformatowany ciąg znaków.
+
+ package pl.javadeveloper.design.patterns.strategy;
+ 
+ public class FormatterContext {
+     private TextFormatterStrategy strategy;
+ 
+     public void set(TextFormatterStrategy strategy) {
+         this.strategy = strategy;
+     }
+ 
+     public void print(String text) {
+        String formattedText = strategy.format(text);
+        System.out.println(formattedText);
+     }
+ }
+
+Aby pokazać działanie wzorca strategia tworzymy klasę klienta. W klasie tej inicjujemy klasę kontekstu. Potem po kolei podstawiamy każdą z implementacji. Następnie sprawdzamy wynik działania programu.
+
+ package pl.javadeveloper.design.patterns.strategy;
+ 
+ public class Client {
+     private static final String TEXT = "Strategy Design Pattern";
+ 
+     public static void main(String[] args) {
+         FormatterContext context = new FormatterContext();
+ 
+         context.set(new CapitalizeFormatter());
+         context.print(TEXT);
+ 
+         context.set(new UpperCaseFormatter());
+         context.print(TEXT);
+ 
+         context.set(new LowerCaseFormatter());
+         context.print(TEXT);
+    }
+ }
+
+Jeśli uruchomimy powyższy program, otrzymamy takie wyniki:
+
+ Strategy Design Pattern
+ STRATEGY DESIGN PATTERN
+ strategy design pattern
