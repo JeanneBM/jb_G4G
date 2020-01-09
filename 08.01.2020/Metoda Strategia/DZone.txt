@@ -31,7 +31,7 @@ public class RarCompressionStrategy implements CompressionStrategy {
 
 public class CompressionContext {
 
-  private CompressionStrategy strategy;
+  private CompressionStrategy strategy; //private interfejs strategy
 
   //this can be set at runtime by the application preferences
 
