@@ -6,6 +6,23 @@ Sekcja 1: Methodology
 
 Sekcja 2: Structural Patterns
 
+4. Model-View-Controller: The Theory
+5. Model-View-Controller: In Practice
+6. Observer Pattern: The Theory
+7. Observer Pattern: An Example Involving Buttons
+8. Observer Pattern: Implementing From Scratch (with MVC)
+9. An MVC Controversy
 
 Sekcja 3: Smaller Scale Patterns
+
+10. The Singleton Pattern
+11. Beans
+12. DAO
+13. DAO Factories
+14. JUnit Basics: Testing the DAO
+15. Extending DAO for Multiple Databases
+16. Saving to Memory
+17. Factory Pattern
+18. Facades
+19. Adapter Pattern
 
