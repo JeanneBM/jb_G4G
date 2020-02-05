@@ -103,7 +103,6 @@ public class View extends JFrame implements ActionListener {
             System.out.println("Hola!");
         }
         else {
-            System.out.println(" ");
             System.out.println("Some other button.");
         }
 
