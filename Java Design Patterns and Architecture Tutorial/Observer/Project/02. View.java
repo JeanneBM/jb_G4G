@@ -96,7 +96,7 @@ public class View extends JFrame implements ActionListener {
         }
         if(source == polishButton) {
             System.out.println(" ");
-            System.out.println("Czesc!Czesc! Mam na imie Asia. Do zobaczenia!");
+            System.out.println("Czesc! Mam na imie Asia. Do zobaczenia!");
         }
         if(source == spanishButton) {
             System.out.println(" ");
