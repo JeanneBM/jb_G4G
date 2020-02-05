@@ -92,15 +92,15 @@ public class View extends JFrame implements ActionListener {
 
         if(source == deutschButton) {
             System.out.println(" ");
-            System.out.println("Guten Tag!");
+            System.out.println("Guten Tag! Ich heiße Asia. Auf Wiedersehen!");
         }
         if(source == polishButton) {
             System.out.println(" ");
-            System.out.println("Czesc!");
+            System.out.println("Czesc!Czesc! Mam na imie Asia. Do zobaczenia!");
         }
         if(source == spanishButton) {
             System.out.println(" ");
-            System.out.println("Hola!");
+            System.out.println("Hola! Mi nombre es Asia. Hasta La Vista!");
         }
         else {
             System.out.println("Some other button.");
