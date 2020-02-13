@@ -17,7 +17,7 @@ Sekcja 3: Smaller Scale Patterns
 
 10. The Singleton Pattern
 11. Beans
-12. DAO
+12. DAO - Data Access Object
 13. DAO Factories
 14. JUnit Basics: Testing the DAO
 15. Extending DAO for Multiple Databases
