@@ -63,8 +63,8 @@ import static org.junit.Assert.assertEquals;
     public class MessagingTemplateMethodTests {
         @Test
         public void DeutschWelcomeTemplateMethod_execute_shouldReturn_AllWelcomes() {
-            AbstractMessagingTemplateMethod msg = new DeutschWelcomeTemplateMethod();
-            assertEquals("Guten Tag! " + "Ich heiße Asia. " + "Auf Wiedersehen!", msg.execute());
+            AbstractMessagingTemplateMethod msg = new DeutschWelcomeTemplateMethod(); //obiekt, ktory sprawdzamy
+            assertEquals("Guten Tag! " + "Ich heiße Asia. " + "Auf Wiedersehen!", msg.execute()); //oczekiwana forma obiektu, wywołanie metody 
         }
 
         @Test
