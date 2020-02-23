@@ -78,5 +78,30 @@ import static org.junit.Assert.assertEquals;
             AbstractMessagingTemplateMethod msg = new SpanishWelcomeTemplateMethod();
             assertEquals("Hola! " + "Mi nombre es Asia. " + "Hasta La Vista!", msg.execute());
         }
-        
-        
+  
+----------------------------------------------------------------------------------------------       
+
+import org.junit.Assert;
+import org.junit.Test;
+
+public class SpanishWelcomeTemplateMethodTest {
+    @Test
+    public void createHead_ShouldReturn_SpanishWelcome() {
+        AbstractMessagingTemplateMethod msg = new SpanishWelcomeTemplateMethod();
+        Assert.assertEquals("Hola! ", msg.createHead());
+    }
+    @Test
+    public void createBody_ShouldReturn_SpanishWelcome() {
+        AbstractMessagingTemplateMethod msg = new SpanishWelcomeTemplateMethod();
+        Assert.assertEquals("Mi nombre es Asia. ", msg.createBody());
+    }
+
+    @Test
+    public void createFooter_ShouldReturn_SpanishWelcome() {
+        AbstractMessagingTemplateMethod msg = new SpanishWelcomeTemplateMethod();
+        Assert.assertEquals("Hasta La Vista!", msg.createFooter());
+    }
+
+}
+
+
