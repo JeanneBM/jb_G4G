@@ -101,7 +101,6 @@ public class SpanishWelcomeTemplateMethodTest {
         AbstractMessagingTemplateMethod msg = new SpanishWelcomeTemplateMethod();
         Assert.assertEquals("Hasta La Vista!", msg.createFooter());
     }
-
 }
 
 
