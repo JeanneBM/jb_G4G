@@ -4,7 +4,7 @@ String createFooter()
 
 String welcomeMessage = new String (createHead() + createBody() + createFooter());
 
-Print(welcomeMessage);
+System.out.print(welcomeMessage);
 return welcomeMessage;
 
 
