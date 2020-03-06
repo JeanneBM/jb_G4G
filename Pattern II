@@ -1,7 +1,5 @@
 String createHead()
-
 String createBody()
-
 String createFooter()
 
 String welcomeMessage = new String (createHead() + createBody() + createFooter());
@@ -23,4 +21,7 @@ Hola! Mi nombre es Asia. Hasta La Vista!
 
 test:
 
+DeutschWelcomeTest
+PolishWelcomeTest
+SpanishWelcomeTest
 MessagingTest
