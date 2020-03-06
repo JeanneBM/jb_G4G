@@ -1,3 +1,5 @@
+package test.ut;
+
 import strategyPattern.ftocPolishWelcomeTemplateMethod;
 import strategyPattern.interfejs;
 
