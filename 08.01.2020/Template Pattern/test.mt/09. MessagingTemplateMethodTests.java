@@ -27,11 +27,5 @@ import static org.junit.Assert.assertEquals;
             AbstractMessagingTemplateMethod msg = new SpanishWelcomeTemplateMethod();
             assertEquals("Hola! " + "Mi nombre es Asia. " + "Hasta La Vista!", msg.execute());
         }
-
-        // 0. Doprowadz powyzszy test do stanu powodzenia
-        // 1. Zaimplemtuj klasę ECPRI która będzie działąła tak jak OBSAI z tym, że nagłówek wiadomosci ma być równy eCPRI
-        // 2. Uzylismy tutaj wzorca projektowego Metoda Szablonowa. Pozostawiajac kod bez zmiany, zrealizuj te same testy, tym razem
-        // używając wzorca projektowego Strategia ( po szczegóły zaczerpnij wiedzy w ksiazce "Zwinne Metody..."
-        // "OBSAIPhysicalLayer" + "OBSAIDataLinkLayer" + "OBSAIApplicationLayer" + "CPRIPhysicalLayer" + "CPRIDataLinkLayer" + "CPRIApplicationLayer"
     }
 
