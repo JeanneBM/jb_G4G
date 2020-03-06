@@ -1,1 +1,26 @@
+String createHead()
 
+String createBody()
+
+String createFooter()
+
+String welcomeMessage = new String (createHead() + createBody() + createFooter());
+
+Print(welcomeMessage);
+return welcomeMessage;
+
+
+pattern:
+
+DeutscheWelcome
+Guten Tag! Ich heiße Asia. Auf Wiedersehen!
+
+PolishWelcome
+Czesc! Mam na imie Asia. Do zobaczenia!
+
+SpanishWelcome 
+Hola! Mi nombre es Asia. Hasta La Vista!
+
+test:
+
+MessagingTest
