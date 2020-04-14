@@ -3,5 +3,5 @@ package Welcomes;
 public interface Welcomes {
     String getLanguage();
 
-    void prepareWelcome();
+    void writeWelcome();
 }
