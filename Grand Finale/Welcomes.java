@@ -1,6 +1,6 @@
-package AG;
+package Welcomes;
 
-public interface AG {
+public interface Welcomes {
     String getLanguage();
 
     void prepareWelcome();
