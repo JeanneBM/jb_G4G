@@ -3,7 +3,7 @@ public abstract class AG implements Welcomes {
     }
 
     public abstract String getWelcome();
-    public void writeWelcome();
+//    public void writeWelcome();
     }
     
  
