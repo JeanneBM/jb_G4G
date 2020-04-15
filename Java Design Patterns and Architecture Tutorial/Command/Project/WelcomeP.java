@@ -1,11 +1,11 @@
 public class WelcomeP implements Interfejs {
-    private PolishWelcome abcpWelcome;
+    private PolishWelcome abcWelcome;
 
-    public WelcomeP(PolishWelcome abcdWelcome){
-        this.abcpWelcome = abcpWelcome;
+    public WelcomeP(PolishWelcome abcWelcome){
+        this.abcWelcome = abcWelcome;
     }
 
     public void execute() {
-        abcpWelcome.greetP();
+        abcWelcome.greetP();
     }
 }
