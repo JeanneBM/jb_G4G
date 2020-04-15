@@ -1,11 +1,11 @@
 public class WelcomeS implements Interfejs {
-    private SpanishWelcome abcsWelcome;
+    private SpanishWelcome abcWelcome;
 
-    public WelcomeD(SpanishWelcome abcdWelcome){
-        this.abcsWelcome = abcsWelcome;
+    public WelcomeS(SpanishWelcome abcWelcome){
+        this.abcWelcome = abcWelcome;
     }
 
     public void execute() {
-        abcsWelcome.greetS();
+        abcWelcome.greetS();
     }
 }
