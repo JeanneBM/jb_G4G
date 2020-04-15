@@ -5,12 +5,12 @@ import java.util.List;
         private List<Interfejs> orderList = new ArrayList<Interfejs>();
 
         public void takeOrder(Interfejs interfejs){
-            orderList.add(Interfejs);
+            orderList.add(interfejs);
         }
 
         public void placeOrders(){
 
-            for (interfejs order : orderList) {
+            for (Interfejs interfejs : orderList) {
                 order.execute();
             }
             orderList.clear();
