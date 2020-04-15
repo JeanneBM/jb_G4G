@@ -1,11 +1,11 @@
 public class WelcomeD implements Interfejs {
-        private DeutschWelcome abcdWelcome;
+        private DeutschWelcome abcWelcome;
 
-        public WelcomeD(DeutschWelcome abcdWelcome){
-            this.abcdWelcome = abcdWelcome;
+        public WelcomeD(DeutschWelcome abcWelcome){
+            this.abcWelcome = abcWelcome;
         }
 
         public void execute() {
-            abcdWelcome.greetD();
+            abcWelcome.greetD();
         }
-    }
+   
