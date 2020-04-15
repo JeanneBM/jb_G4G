@@ -1,4 +1,4 @@
-public class WelcomeP implements interfejs {
+public class WelcomeP implements Interfejs {
     private PolishWelcome abcpWelcome;
 
     public WelcomeP(PolishWelcome abcdWelcome){
