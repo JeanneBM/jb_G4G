@@ -11,7 +11,7 @@ import java.util.List;
         public void placeOrders(){
 
             for (Interfejs interfejs : orderList) {
-                order.execute();
+                interfejs.execute();
             }
             orderList.clear();
         }
