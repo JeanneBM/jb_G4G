@@ -1,30 +1,42 @@
 ShapeFactory.java 
-public interface ShapeFactory {   
-public Shape makeCircle();    
-public Shape makeSquare(); 
+public interface ShapeFactory 
+{   
+    public Shape makeCircle();    
+    public Shape makeSquare(); 
 }
 
 ---------------------------------------------------------------------------
 ShapeFactoryImplementation.java 
 
-public class ShapeFactoryImplementation implements ShapeFactory {    
-public Shape makeCircle()    {        
-return new Circle();    }
+public class ShapeFactoryImplementation implements ShapeFactory 
+{    
+    public Shape makeCircle()    
+    {        
+        return new Circle();    
+     }
 
-    public Shape makeSquare()    {        
-    return new Square();    } }
+    public Shape makeSquare()    
+    {        
+    return new Square();   
+    } 
+}
 
 ---------------------------------------------------------------------------
 Fragment kodu tworzący obiekt Circle 
+
 public void testCreateCircle() throws Exception 
-{    Shape s = factory.make("Circle");    assert(s instanceof Circle); }                                                                   
+{    
+    Shape s = factory.make("Circle");    
+    assert(s instanceof Circle); 
+}                                                                   
 
 ---------------------------------------------------------------------------
 ShapeFactory.java 
 
 public interface ShapeFactory 
-
-{    public Shape make(String shapeName) throws Exception; }
+{    
+    public Shape make(String shapeName) throws Exception; 
+}
 
 ---------------------------------------------------------------------------
 ShapeFactoryImplementation.java 
