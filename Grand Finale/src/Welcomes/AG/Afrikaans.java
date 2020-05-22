@@ -5,6 +5,6 @@ public class Afrikaans extends AG {
     }
 
     public String getWelcome() {
-        return "Goeie môre! My naam is Asië. Kyk! ";
+        return "Goeie môre! My naam is Asië. Kyk!";
     }
 }
