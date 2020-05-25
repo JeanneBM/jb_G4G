@@ -1,5 +1,5 @@
 
-public class Bengalski extends AG {
+public class Bengalski extends AbstractAG {
     public bengalski() {
     }
 
