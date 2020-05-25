@@ -5,6 +5,7 @@ public interface interfejsWelcomes {
     public static Welcome createWelcome;
 }
 
+---------------------------------------------------------------------------------------------
 
 public abstract class AbstractAG implements interfejsWelcomes {
     public static final int Afrikaans = 0;
@@ -23,7 +24,7 @@ public abstract class AbstractAG implements interfejsWelcomes {
 
         }
         
- 
+ ---------------------------------------------------------------------------------------------
 
 public class Afrikaans extends AbstractAG {
     public afrikaans() {
@@ -33,4 +34,6 @@ public class Afrikaans extends AbstractAG {
         return "Goeie môre! My naam is Asië. Kyk!";
     }
 }
+
+---------------------------------------------------------------------------------------------
 
