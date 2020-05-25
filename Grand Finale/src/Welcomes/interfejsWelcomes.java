@@ -1,6 +1,6 @@
 package Welcomes;
 
-public interface Welcomes {
+public interface interfejsWelcomes {
     String getLanguage();
 
     void writeWelcome();
