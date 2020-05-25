@@ -1,7 +1,7 @@
 package Welcomes;
 
 public interface interfejsWelcomes {
-    String getLanguage();
+    public String getWelcome();
 
     void writeWelcome();
 }
