@@ -1,4 +1,4 @@
-public abstract class AbstractAG implements Welcomes {
+public abstract class AbstractAG implements interfejsWelcomes {
     public static final int Afrikaans = 0;
     public static final int Arabski = 1;
     public static final int Bengalski = 2;
