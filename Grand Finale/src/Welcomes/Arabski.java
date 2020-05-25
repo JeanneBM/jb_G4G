@@ -1,6 +1,4 @@
-package AG;
-
-public class Arabski extends AG {
+public class Arabski extends AbstractAG {
     public arabski() {
     }
 
