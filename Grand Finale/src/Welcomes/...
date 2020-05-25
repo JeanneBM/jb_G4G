@@ -1,1 +1,36 @@
+package Welcomes;
+
+public interface interfejsWelcomes {
+    public String getWelcome();
+    public static Welcome createWelcome;
+}
+
+
+public abstract class AbstractAG implements interfejsWelcomes {
+    public static final int Afrikaans = 0;
+    public static final int Arabski = 1;
+    public static final int Bengalski = 2;
+
+    public static Welcome createWelcome(int type) {
+
+        switch(type) {
+            case Afrikaans:
+                return new Afrikaans();
+            case Arabski:
+                return new Arabski();
+            case Bengalski:
+                return new Bengalski();
+
+        }
+        
+ 
+
+public class Afrikaans extends AbstractAG {
+    public afrikaans() {
+    }
+
+    public String getWelcome() {
+        return "Goeie môre! My naam is Asië. Kyk!";
+    }
+}
 
