@@ -1,6 +1,6 @@
 package AG;
 
-public class Afrikaans extends AG {
+public class Afrikaans extends AbstractAG {
     public afrikaans() {
     }
 
