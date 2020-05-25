@@ -1,4 +1,3 @@
-
 public class Bengalski extends AbstractAG {
     public bengalski() {
     }
