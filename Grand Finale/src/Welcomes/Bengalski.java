@@ -1,4 +1,3 @@
-package AG;
 
 public class Bengalski extends AG {
     public bengalski() {
