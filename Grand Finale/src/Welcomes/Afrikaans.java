@@ -1,5 +1,3 @@
-package AG;
-
 public class Afrikaans extends AbstractAG {
     public afrikaans() {
     }
