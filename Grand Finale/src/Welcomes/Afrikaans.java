@@ -1,8 +1,7 @@
 public class Afrikaans extends AbstractAG {
-    public afrikaans() {
-    }
 
-    public String getWelcome() {
+    @Override
+    public String createWelcome() {
         return "Goeie môre! My naam is Asië. Kyk!";
     }
 }
