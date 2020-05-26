@@ -20,7 +20,9 @@ public abstract class AbstractAG implements interfejsWelcomes {
                 return new Arabski();
             case Bengalski:
                 return new Bengalski();
-
+            break;
+            default:
+                System.out.println("Nie ma takiego jezyka");
         }
         
  ---------------------------------------------------------------------------------------------
