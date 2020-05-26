@@ -25,10 +25,6 @@ public abstract class AbstractAG implements interfejsWelcomes {
  ---------------------------------------------------------------------------------------------
 
 public class Afrikaans extends AbstractAG {
-    
-    @Override
-    public afrikaans() {
-    }
 
     @Override
     public String createWelcome() {
