@@ -1,1 +1,86 @@
 
+public interface interfejsCommand {
+    public void choiceUp();
+}
+
+----------------------------------------------------------------------------------------------------------------------
+
+public class choiceTaker {
+    Command command;
+
+    public choiceTaker() {
+    }
+
+    public void takeChoice(Command c) {
+        this.command = c;
+        this.command.choiceUp();
+    }
+}
+
+----------------------------------------------------------------------------------------------------------------------
+
+public class choiceMaker {
+    static String welcomeType="";
+    public static void main(String[] args) {
+        ChoiceTaker choiceTaker = new ChoiceTaker();
+
+        Scanner scanner = new Scanner(System.in);
+        while(true) {
+            System.out.println("In what range is the first letter of the language you are looking for?");
+            System.out.println("(1) A-G");
+            System.out.println("(2) H-N");
+            System.out.println("(Other) Libertà");
+
+            int a = scanner.nextInt();
+            if(a==1) {
+            
+----------------------------------------------------------------------------------------------------------------------
+
+public class welcomeOrder implements interfejsCommand{
+    welcomeMaker WelcomeMaker;
+    String order;
+    public welcomeOrder(welcomeMaker WelcomeMaker, String order){
+        this.WelcomeMaker = WelcomeMaker;
+        this.order= order;
+    }
+
+    @Override
+    public void choiceUp() {
+        WelcomeMaker.welcomeType = order;
+        WelcomeMaker.getOrder("Welcome");
+    }
+}
+
+----------------------------------------------------------------------------------------------------------------------
+
+import Welcomes.*;
+
+// Receiver
+public class welcomeMaker {
+    public static String welcomeType="";
+    Welcome welcome;
+    
+----------------------------------------------------------------------------------------------------------------------
+
+import Welcome.*;
+
+public class welcomeOrder {
+
+    public Welcome makeWelcome(String welcomeType) {
+        if (welcomeType.equals(null)){
+            return null;
+        }
+        else if(welcomeType.equals("Afrikaans")){
+            return new Afrikaans();
+        }
+        else if(welcomeType.equals("Arabski")){
+            return new Arabski();
+        }
+        else if(welcomeType.equals("Bengalski")){
+            return new Bengalski();
+        }
+
+        return null;
+        
+----------------------------------------------------------------------------------------------------------------------
+
