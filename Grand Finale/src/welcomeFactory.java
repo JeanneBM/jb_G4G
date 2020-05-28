@@ -1,6 +1,6 @@
 import Welcome.*;
 
-public class welcomeOrder {
+public class welcomeFactory {
 
     public Welcome makeWelcome(String welcomeType) {
         if (welcomeType.equals(null)){
