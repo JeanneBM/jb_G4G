@@ -66,12 +66,11 @@ public class welcomeMaker {
 
 
      	interfejsWelcomes InterfejsWelcomes;
-    public void getOrder(String factoryType){
+        public void getOrder(String factoryType){
         if(factoryType.equalsIgnoreCase("")){
 		}
-        if(factoryType.equalsIgnoreCase("(1) A-G"")){
+        if(factoryType.equalsIgnoreCase(anotherstring: "(1) A-G"")){
             System.out.println(WelcomeType + " order received.");
-
             welcomeFactory factory = new welcomeFactory();
             InterfejsWelcomes = factory.makeWelcome(WelcomeType);
             InterfejsWelcomes.createWelcome();
