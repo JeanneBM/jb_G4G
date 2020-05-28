@@ -62,10 +62,26 @@ import Welcomes.*;
 
 // Receiver
 public class welcomeMaker {
-    public static String welcomeType="";
-    Welcome welcome;
-  
-...
+        public static String WelcomeType="";
+
+
+     	interfejsWelcomes InterfejsWelcomes;
+    public void getOrder(String factoryType){
+        if(factoryType.equalsIgnoreCase("")){
+		}
+        if(factoryType.equalsIgnoreCase("(1) A-G"")){
+            System.out.println(WelcomeType + " order received.");
+
+            welcomeFactory factory = new welcomeFactory();
+            InterfejsWelcomes = factory.makeWelcome(WelcomeType);
+            InterfejsWelcomes.createWelcome();
+
+            System.out.println(InterfejsWelcomes.getWelcome() + " order completed.");
+
+        }
+        System.out.println("");
+    }
+
 ----------------------------------------------------------------------------------------------------------------------
 
 public class choiceMaker {
