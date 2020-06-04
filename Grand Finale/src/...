@@ -141,7 +141,21 @@ public class choiceMaker {
                     } else if (welcome == 3) {
                         welcomeType = "";
                         System.out.println("(3) is chosen.");
-			
-			
+                    } else {
+                        break;
+                    }
+                }
+		
+		System.out.println("");
+                WelcomeOrder welcomeOrder = new welcomeOrder(WelcomeMaker, welcomeType);
+                choiceTaker.takeChoice(welcomeOrder);
+            } else {
+                System.out.println("-------------------------------------------------------------------------------");
+                System.out.println("Libertà");
+                break;
+            }
+        }
+    }
+}			
 ----------------------------------------------------------------------------------------------------------------------
 
