@@ -112,6 +112,8 @@ public class choiceMaker {
                     System.out.println("(1) ");
                     System.out.println("(2) ");
                     System.out.println("(3) ");
+		    int welcome = scanAG.nextInt();
+		    
  	    else if (a == 2) {
                 Scanner scanHN = new Scanner(System.in);
                 System.out.println("-------------------- (2) H-N --------------------");
@@ -120,5 +122,7 @@ public class choiceMaker {
                     System.out.println("(1) ");
                     System.out.println("(2) ");
                     System.out.println("(3) ");
+		    int welcome = scanHN.nextInt();
+		    
 ----------------------------------------------------------------------------------------------------------------------
 
