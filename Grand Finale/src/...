@@ -105,7 +105,20 @@ public class choiceMaker {
 
             int a = scanner.nextInt();
             if(a==1) {
-            
-  ...
+            	Scanner scanAG = new Scanner(System.in);
+                System.out.println("-------------------- (1) A-G --------------------");
+                for (int i = 0; i < 1; i++) {
+                    System.out.println("-------------------- Languages --------------------");
+                    System.out.println("(1) ");
+                    System.out.println("(2) ");
+                    System.out.println("(3) ");
+ 	    else if (a == 2) {
+                Scanner scanHN = new Scanner(System.in);
+                System.out.println("-------------------- (2) H-N --------------------");
+                for (int i = 0; i < 1; i++) {
+                    System.out.println("-------------------- Languages --------------------");
+                    System.out.println("(1) ");
+                    System.out.println("(2) ");
+                    System.out.println("(3) ");
 ----------------------------------------------------------------------------------------------------------------------
 
