@@ -33,7 +33,7 @@ public class choiceMaker {
 			
  	    else if (a == 2) {
                 Scanner scanHN = new Scanner(System.in);
-                System.out.println("-------------------- (2) H-N --------------------");
+                System.out.println("-------------------- (2) H-M --------------------");
                 for (int i = 0; i < 1; i++) {
                     System.out.println("-------------------- Languages --------------------");
                     System.out.println("(1) ");
@@ -54,7 +54,30 @@ public class choiceMaker {
                     }
                 }
 		
-		System.out.println("");
+ 	    else if (a == 3) {
+                Scanner scanNW = new Scanner(System.in);
+                System.out.println("-------------------- (3) N-W --------------------");
+                for (int i = 0; i < 1; i++) {
+                    System.out.println("-------------------- Languages --------------------");
+                    System.out.println("(1) ");
+                    System.out.println("(2) ");
+                    System.out.println("(3) ");
+		    int welcome = scanHN.nextInt();
+		      if (welcome == 1) {
+                        welcomeType = "";
+                        System.out.println("(1) is chosen.");
+                    } else if (welcome == 2) {
+                        welcomeType = "";
+                        System.out.println("(2) is chosen.");
+                    } else if (welcome == 3) {
+                        welcomeType = "";
+                        System.out.println("(3) is chosen.");
+                    } else {
+                        break;
+                    }
+                }
+		    
+		    System.out.println("");
                 WelcomeOrder welcomeOrder = new welcomeOrder(WelcomeMaker, welcomeType);
                 choiceTaker.takeChoice(welcomeOrder);
             } else {
