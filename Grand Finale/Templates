@@ -1,0 +1,7 @@
+public class * extends AbstractAG {
+
+    @Override
+    public String createWelcome() {
+        return " * ";
+    }
+}
