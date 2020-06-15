@@ -3,7 +3,7 @@ import Welcomes.*;
 // Receiver
 public class welcomeMaker {
         public static String WelcomeType="";
-     	interfejsWelcomes InterfejsWelcomes;
+     	interfejsAG InterfejsWelcomes;
         public void getOrder(String factoryType){
 	
 	
