@@ -7,7 +7,7 @@ public class welcomeMaker {
         public void getOrder(String factoryType){
 	
 	
-        if(factoryType.equalsIgnoreCase(anotherstring: "(1) A-G")){
+        if(factoryType.equalsIgnoreCase(anotherString: "(1) A-G")){
 		        
         	System.out.println(WelcomeType + " order received.");
         	welcomeFactory factory = new welcomeFactory();
@@ -17,7 +17,7 @@ public class welcomeMaker {
 	}
 	
 	
-	else if(factoryType.equalsIgnoreCase(anotherstring: "(2) H-N")){
+	if(factoryType.equalsIgnoreCase(anotherString: "(2) H-N")){
 	
 		System.out.println(WelcomeType + " order received.");
         	welcomeFactory factory = new welcomeFactory();
