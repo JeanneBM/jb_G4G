@@ -1,8 +1,6 @@
-import Welcome.*;
-
 public class welcomeFactory {
 
-    public Welcome makeWelcome(String welcomeType) {
+    public interfejsAG makeWelcome(String welcomeType) {
         if (welcomeType.equals(null)){
             return null;
         }
@@ -17,4 +15,3 @@ public class welcomeFactory {
         }
 
         return null;
-
