@@ -1,5 +1,5 @@
 public class Arabski extends AbstractAG {
-    public arabski() {
+    public Arabski() {
     }
 
     public String getWelcome() {
