@@ -8,9 +8,7 @@ public class welcomeOrder implements interfejsCommand{
 
     @Override
     public void choiceUp() {
-        WelcomeMaker.welcomeType = order;
+        WelcomeMaker.WelcomeType = order;
         WelcomeMaker.getOrder("Welcome");
     }
-}
-        
-        
+}     
