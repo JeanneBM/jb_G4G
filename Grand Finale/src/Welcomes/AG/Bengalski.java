@@ -1,5 +1,5 @@
 public class Bengalski extends AbstractAG {
-    public bengalski() {
+    public Bengalski() {
     }
 
     public String getWelcome() {
