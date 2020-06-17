@@ -14,7 +14,7 @@ public class welcomeMaker {
         }
 
 
-	    if(factoryType.equalsIgnoreCase(anotherString: "(2) H-N")){
+	 if(factoryType.equalsIgnoreCase(anotherString: "(2) H-N")){
 
             System.out.println(WelcomeType + " order received.");
             welcomeFactory factory = new welcomeFactory();
