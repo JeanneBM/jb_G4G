@@ -1,7 +1,21 @@
-public class * extends AbstractAG {
+public class [nazwaklasy] extends AbstractAG {
 
     @Override
     public String createWelcome() {
         return " * ";
     }
 }
+
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+public class [nazwaklasy] extends AbstractAG {
+    public [nazwaklasy]() {
+    }
+
+    public String getWelcome() {
+        return "*";
+    }
+}
+
+---------------------------------------------------------------------------------------------------------------------------------------------
+
