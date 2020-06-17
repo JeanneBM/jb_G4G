@@ -1,10 +1,7 @@
 public class choiceTaker {
-    Command command;
+    interfejsCommand command;
 
-    public choiceTaker() {
-    }
-
-    public void takeChoice(Command c) {
+    public void takeChoice(interfejsCommand c) {
         this.command = c;
         this.command.choiceUp();
     }
