@@ -18,5 +18,6 @@ public abstract class AbstractAG implements interfejsAG {
             default:
                 System.out.println("Nie ma takiego jezyka");
         }
-        
+    }
+}
         
