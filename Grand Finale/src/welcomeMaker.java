@@ -4,7 +4,7 @@ public class welcomeMaker {
 
     interfejsAG InterfejsAG;
     public void getOrder(String factoryType){
-           if(factoryType.equalsIgnoreCase(anotherString: "(1) A-G")){
+           if(factoryType.equalsIgnoreCase("(1) A-G")){
 
             System.out.println(WelcomeType + " order received.");
             welcomeFactory factory = new welcomeFactory();
@@ -14,7 +14,7 @@ public class welcomeMaker {
         }
 
 
-	    if(factoryType.equalsIgnoreCase(anotherString: "(2) H-N")){
+	    if(factoryType.equalsIgnoreCase("(2) H-N")){
 
             System.out.println(WelcomeType + " order received.");
             welcomeFactory factory = new welcomeFactory();
