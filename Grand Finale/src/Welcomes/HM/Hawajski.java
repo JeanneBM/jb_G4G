@@ -1,7 +1,7 @@
 public class Hawajski extends AbstractAG {
 
     @Override
-    public String createWelcome() {
+    public String getWelcome() {
         return "Aloha kakahiaka ʻO Asia koʻu inoa. Aloha maikaʻi!";
     }
 }
