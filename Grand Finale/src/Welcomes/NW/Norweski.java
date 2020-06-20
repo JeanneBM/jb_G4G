@@ -1,7 +1,7 @@
 public class Norweski extends AbstractAG {
 
     @Override
-    public String createWelcome() {
+    public String getWelcome() {
         return "God morgen! Jeg heter Asia. Se deg!";
     }
 }
