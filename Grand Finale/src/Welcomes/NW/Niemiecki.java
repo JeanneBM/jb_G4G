@@ -1,7 +1,7 @@
 public class Niemiecki extends AbstractAG {
 
     @Override
-    public String createWelcome() {
+    public String getWelcome() {
         return "Guten Morgen! Ich heiße Asia. Wir sehen uns!";
     }
 }
