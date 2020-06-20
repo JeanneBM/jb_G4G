@@ -1,7 +1,7 @@
 public class Hebrajski extends AbstractAG {
 
     @Override
-    public String createWelcome() {
+    public String getWelcome() {
         return "בוקר טוב! שמי אסיה. ראה אותך!";
     }
 }
