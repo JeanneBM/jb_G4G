@@ -58,35 +58,33 @@ public class welcomeFactory{
         
 ----------------------------------------------------------------------------------------------------------------------
 
-import Welcomes.*;
-
-// Receiver
 public class welcomeMaker {
-        public static String WelcomeType="";
-     	interfejsWelcomes InterfejsWelcomes;
-        public void getOrder(String factoryType){
-	
-	
-        if(factoryType.equalsIgnoreCase(anotherstring: "(1) A-G")){
-		        
-        	System.out.println(WelcomeType + " order received.");
-        	welcomeFactory factory = new welcomeFactory();
-        	InterfejsWelcomes = factory.makeWelcome(WelcomeType);
-        	InterfejsWelcomes.createWelcome();
-       		System.out.println(InterfejsWelcomes.getWelcome() + " order completed.");
-	}
-	
-	
-	else if(factoryType.equalsIgnoreCase(anotherstring: "(2) H-N")){
-	
-		System.out.println(WelcomeType + " order received.");
-        	welcomeFactory factory = new welcomeFactory();
-        	InterfejsWelcomes = factory.makeWelcome(WelcomeType);
-       		InterfejsWelcomes.createWelcome();
-        	System.out.println(InterfejsWelcomes.getWelcome() + " order completed.");
+    public static String WelcomeType="";
+
+
+    interfejsAG InterfejsAG;
+    public void getOrder(String factoryType){
+           if(factoryType.equalsIgnoreCase("(1) A-G")){
+
+            System.out.println(WelcomeType + " order received.");
+            welcomeFactory factory = new welcomeFactory();
+            InterfejsAG = factory.makeWelcome(WelcomeType);
+            InterfejsAG.createWelcome();
+            System.out.println(InterfejsAG.getWelcome() + " order completed.");
         }
-	
+
+
+	    if(factoryType.equalsIgnoreCase("(2) H-N")){
+
+            System.out.println(WelcomeType + " order received.");
+            welcomeFactory factory = new welcomeFactory();
+            InterfejsAG = factory.makeWelcome(WelcomeType);
+            InterfejsAG.createWelcome();
+            System.out.println(InterfejsAG.getWelcome() + " order completed.");
+        }
+
         System.out.println("");
+    }
 }
 
 ----------------------------------------------------------------------------------------------------------------------
