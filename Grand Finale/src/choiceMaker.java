@@ -25,7 +25,7 @@ public class choiceMaker {
                     int welcome = scanAG.nextInt();
                     if (welcome == 1) {
                         welcomeType = "Afrikaans";
-                        System.out.println("Afrikaans is chosen.");
+                        System.out.println("Afrikaans is chosen:");
 
                     } else if (welcome == 2) {
                         welcomeType = "Arabski";
