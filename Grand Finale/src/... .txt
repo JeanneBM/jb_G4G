@@ -36,8 +36,6 @@ public class welcomeOrder implements interfejsCommand{
 
 ----------------------------------------------------------------------------------------------------------------------
 
-import Welcome.*;
-
 public class welcomeFactory{
 
     public Welcome makeWelcome(String welcomeType) {
